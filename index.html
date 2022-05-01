@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS -->
+		<link href="css/reset.css">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="index.css" rel="stylesheet">
+		<title>Encriptador</title>
+	</head>
+
+	<body>
+		<!-- Área de logo y título -->
+		<header>
+			<nav class="navigation">
+				
+				<div class="navigation-center">
+					<img class="imagen-logo" src="imagenes/Logo.png" alt="Alura Logo">
+					<h1>APLICACIÓN PARA ENCRIPTAR/DESENCRIPTAR TEXTO</h1>
+				</div>
+				
+			</nav>
+		</header>
+
+		<!-- Área principal -->
+		<main class="section">
+			<form class="section-center">
+				<!-- Área para ingresar texto -->
+				<div class="single-textarea">
+					<textarea
+						name="texto"
+						id="userInput"
+						cols="30"
+						rows="7"
+						placeholder="Ingrese el texto aqui"
+					></textarea>
+					<div class="validation-container">
+						<img src="imagenes/ValidationIcon.png" alt="" />
+						<span>Solo letras minúsculas y sin acentos.</span>
+					</div>
+				</div>
+				<!-- Botones -->
+				<div class="buttons-container">
+					<button type="submit" id="btnEncriptado" class="btn btn-fill">
+						Encriptar
+					</button>
+					<button type="submit" id="btnDesencriptado" class="btn btn-border">
+						Desencriptar
+					</button>
+				</div>
+				<!-- Resultados -->
+				<article class="result-container result-mobile">
+					<div class="img-container">
+						<h2>Ningún mensaje fue encontrado</h2>
+						<p>Ingresa el texto que desees encriptar o desencriptar</p>
+					</div>
+					<!-- Botones -->
+					<div class="result-display">
+						<textarea class="result-text"></textarea>
+						<button class="btn btn-border copyBtn">Copiar</button>
+						<h4 class="restartBtn">Reiniciar</h4>
+					</div>
+				</article>
+			</form>
+
+			<!-- Resultados en la caja derecha-->
+			<article class="result-container result-desktop">
+				<div class="result-desktop-center">
+					<div class="img-container">
+						<img src="imagenes/Muñeco.png" alt="Ningun Mensaje" />
+						<h2>Ningún mensaje fue encontrado</h2>
+						<p>Ingresa el texto que desees encriptar o desencriptar</p>
+					</div>
+
+					<!-- Botones -->
+					<div class="result-display">
+						<textarea class="result-text"></textarea>
+						<button class="btn btn-border copyBtn">Copiar</button>
+						<h4 class="restartBtn">Reiniciar</h4>
+					</div>
+				</div>
+			</article>
+		</main>
+	</body>
+
+	<!-- Área pie de Página -->
+	<footer>
+		<p class="copyright">&copy Copyright María Silvina Pérez para Oracle Alura Latam - Challenge 1  - 2022</p>
+	</footer>
+	<script type="text/javascript" src="js/main.js"></script>
+</html>
